@@ -32,6 +32,8 @@ func main() {
 		}
 	}
 }
+
+// db connection
 func connectPostgresDB() *sql.DB {
 	connectTo := "user=postgres dbname=databasename password='*******' host=localhost port=5432 sslmode=disable"
 	db, err := sql.Open("postgres", connectTo)
